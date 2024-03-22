@@ -1,0 +1,328 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Hind", sans-serif;
+    box-sizing: border-box;
+}
+header {
+    height: 100vh;
+    background: url('../images/banner.jpg');
+    background-size: cover; 
+    background-position: center;
+    position: relative;
+}
+#nav-animation{
+    display: none;
+}
+.site-title h3{
+    cursor: auto;
+}
+.overlay{
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.623);
+    
+}
+.nav li{
+    cursor: pointer;
+}
+.navbar{
+    height: 10%;
+    left: 12%;
+    z-index: 99;
+}
+.navbar-brand{
+    text-shadow: 2px 1px 1px rgba(0, 0, 0, 0.623);
+}
+.navbar-nav {
+   
+}
+
+.navbar-toggler{
+    border: none !important;
+    right: -10%;
+}
+.navbar-toggler:focus {
+    outline: none !important;
+    box-shadow: none !important;
+    border: none !important;
+}
+.nav-link:hover{
+    color: white !important;
+}
+.profile-container{
+    position: relative;
+    padding-top: 130px;
+    z-index: 98;
+}
+.profile-container img{
+    border-radius: 50%;
+    border: 5px solid gray;
+    margin-left: 170px;
+   
+}
+.profile{
+    
+}
+.profile-container p{
+    font-size: 3.5rem;
+
+    font-weight: 700;
+}
+.mySlides {
+    transition: opacity 2s ease; 
+}
+.slideshow {
+    position: relative;
+    width: 400px;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+.slide {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+    z-index: 1;
+    font-size: 2rem;
+    font-weight: 400;
+    left: 2.5rem;
+}
+  
+.slideshow .slide.active {
+    opacity: 1;
+}
+.slideshow{
+    
+}
+
+
+.object {
+    animation: MoveUpDown 3s linear infinite;
+}
+#about{
+   
+}
+.about-title{
+    font-weight: 600;
+    margin-top: 30px;
+    width: 300px;
+}
+.about-from{
+    width: 300px;
+}
+#about .desc{
+    width: 100%;
+}
+#about h4{
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+.my-resume-btn:hover{
+    background-color: white !important;
+    color: black !important;
+    border: 2px solid black;
+}
+#skills{
+    background-color: rgb(229, 228, 228);
+
+    padding: 3rem;
+}
+#skills .line{
+    background-color: gray;
+    width: 90%;
+    height: 5px;
+    border-radius: 15px;
+}
+#skills .line .line-fill{
+    background-color: green;
+    height: 5px;
+    border-radius: 15px;
+}
+.projects{
+    display: grid;
+    place-content: center;
+}
+.project-btns{
+    font-size: 13px;
+}
+.project-card-text{
+    font-size: 13.5px;
+}
+#Services{
+    background-color: rgb(221, 218, 218);
+}
+.gray-bg{
+    background-color: rgb(229, 228, 228);
+}
+.blog-post{
+    display: grid;
+    place-content: center;
+}
+.form{
+   display: grid;
+   width: 700px;
+   margin-top: 2rem;
+   gap: 1rem;
+}
+.form input,
+textarea{
+    border: none;
+    outline: none;
+}
+/* CSS classes for navbar elements when scrolled down */
+.text-black {
+    color: black !important;
+}
+.text-gray{
+    color: gray !important;
+}
+.navbar-toggler {
+    background-color: transparent;
+    transition: background-color 0.3s ease;
+}
+
+.navbar-toggler.scrolled {
+    background-color: black;
+}
+
+
+.line-fill {
+    background-color: green; /* Change color as needed */
+    height: 100%;
+    transition: width 1s ease-in-out; /* Transition effect for width */
+}
+.line {
+    width: 100%;
+    height: 10px;
+    background-color: #ccc;
+    position: relative;
+  }
+  .progress-bar {
+    height: 100%;
+    background-color: green;
+    position: absolute;
+    top: 0;
+    left: 0;
+  }
+.form{
+    position: relative;
+}
+.form-p{
+    position: absolute;
+    bottom: -3rem;
+    left: 25%;
+    background-color: rgb(226, 223, 223);
+}
+.al{
+    height: 1px;
+    width: 100%;
+    color: white;
+}
+ 
+@keyframes MoveUpDown {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-30px);
+    }
+}
+
+@media (max-width: 960px) {
+    .nav {
+        display: none !important;
+        
+    }
+    .nav-item{
+        position: relative;
+    }
+    .nav-link{
+        z-index: 99;
+        position: relative;
+    }
+    #nav-animation{
+        height: 40px;
+        width: 100%;
+        position: absolute;
+        cursor: pointer;
+        z-index: 98;
+        display: block;
+    }
+    .site-title{
+        margin-left: -60px;
+    }
+    .navbar-nav{
+        background-color: white;
+        
+    }
+    .navbar-toggler{
+        color: black !important;
+    }
+    .navbar-active{
+        color: black;
+        
+    }
+    .nav-item:hover{
+        color: aqua;
+    }
+    .nav-link{
+        color: green !important;
+    }
+    .nav-link:hover{
+        color: green !important;
+    }
+    #about {
+     
+    }
+    #skills {
+     
+    }
+    .projects{
+        display: grid;
+        place-content: center;
+    }
+    .form{
+        width:90% ;
+    }
+    .form-p{
+        position: absolute;
+        bottom: -3rem;
+        left: 25%;
+    }
+   
+}
+@media (max-width:600px) {
+    .profile-container p{
+        font-size: 2rem;
+    }
+    .profile-container img{
+        border-radius: 50%;
+        border: 5px solid gray;
+        margin-left:140px;
+       
+    }
+    .slide {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        opacity: 0;
+        transition: opacity 1s ease-in-out;
+        z-index: 1;
+        font-size: 2rem;
+        font-weight: 100;
+        left: -.1rem;
+      }
+      .form-p{
+        position: absolute;
+        bottom: -4rem;
+        left: 15%;
+    }
+    .al{
+        height: 40px;
+        width: 100%;
+        color: white;
+    }
+   
+}
