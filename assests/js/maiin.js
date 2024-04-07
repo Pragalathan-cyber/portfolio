@@ -185,26 +185,5 @@ function animateCount(element) {
     ScrollTrigger.addEventListener('scroll', updateNavColor);
 
 
-    function redirect(){
-        event.preventDefault()
-        const form = document.querySelector('.form')
-        const name = document.getElementById('name')
-        const email = document.getElementById('email')
-        const message = document.getElementById('message')
-        const p = document.createElement('p')
-
-        if(name.value == '' || email.value == '' || message.value == ''){
-             p.innerHTML='please fill the form !!'
-             p.classList.add('form-p')
-        }
-        else{
-            p.innerHTML='Something is wrong please click the mail icon instead'
-            p.classList.add('form-p')
-        }
-
-       
-        form?.append(p)
-    }
-
 
 

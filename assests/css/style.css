@@ -4,6 +4,10 @@
     font-family: "Hind", sans-serif;
     box-sizing: border-box;
 }
+body{
+  background: #222327;
+  color: #bcbcbc;
+}
 header {
     height: 100vh;
     background: url('../images/banner.jpg');
@@ -11,6 +15,21 @@ header {
     background-position: center;
     position: relative;
 }
+
+.navbar{
+  position:absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.toggle-container{
+  padding: 10px;
+  border: 2px solid #fff;
+}
+.navbar-collapse{
+  background-color: transparent !important;
+}
+
 #nav-animation{
     display: none;
 }
@@ -38,14 +57,10 @@ header {
 }
 
 .navbar-toggler{
-    border: none !important;
-    right: -10%;
+    top: 10px;
+    right: -9%;
 }
-.navbar-toggler:focus {
-    outline: none !important;
-    box-shadow: none !important;
-    border: none !important;
-}
+
 .nav-link:hover{
     color: white !important;
 }
@@ -124,22 +139,7 @@ header {
     color: black !important;
     border: 2px solid black;
 }
-#skills{
-    background-color: rgb(229, 228, 228);
 
-    padding: 3rem;
-}
-#skills .line{
-    background-color: gray;
-    width: 90%;
-    height: 5px;
-    border-radius: 15px;
-}
-#skills .line .line-fill{
-    background-color: green;
-    height: 5px;
-    border-radius: 15px;
-}
 .projects{
     display: grid;
     place-content: center;
@@ -150,16 +150,11 @@ header {
 .project-card-text{
     font-size: 13.5px;
 }
-#Services{
-    background-color: rgb(221, 218, 218);
-}
+
 .gray-bg{
     background-color: rgb(229, 228, 228);
 }
-.blog-post{
-    display: grid;
-    place-content: center;
-}
+
 .form{
    display: grid;
    width: 700px;
@@ -186,26 +181,6 @@ textarea{
 .navbar-toggler.scrolled {
     background-color: black;
 }
-
-
-.line-fill {
-    background-color: green; /* Change color as needed */
-    height: 100%;
-    transition: width 1s ease-in-out; /* Transition effect for width */
-}
-.line {
-    width: 100%;
-    height: 10px;
-    background-color: #ccc;
-    position: relative;
-  }
-  .progress-bar {
-    height: 100%;
-    background-color: green;
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
 .form{
     position: relative;
 }
@@ -276,9 +251,7 @@ textarea{
     #about {
      
     }
-    #skills {
-     
-    }
+
     .projects{
         display: grid;
         place-content: center;
@@ -326,3 +299,6 @@ textarea{
     }
    
 }
+
+
+
